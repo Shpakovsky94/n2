@@ -3,9 +3,12 @@ import java.net.http.HttpRequest;
 import java.util.List;
 
 public class Main {
-    public static final String URL = "https://emojihub.yurace.pro/api/random";
+    public static final String CORRECT_URL = "https://emojihub.yurace.pro/api/random";
+    public static final String FAIL_URL = "https://some-fail.com/api";
 
     public static void main(String[] args) {
+        String URL = args.length > 0 && args[0].equals("successful") ? CORRECT_URL : FAIL_URL;
+
         // Create the HTTP client and request
         HttpClient client = HttpUtil.createHttpClient();
         HttpRequest request = HttpUtil.createHttpRequest(URL);
