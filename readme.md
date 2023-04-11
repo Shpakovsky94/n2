@@ -9,6 +9,7 @@
 2. Build the project using Maven:
 
 ```
+   cd n2
    mvn clean package
 ```
 
