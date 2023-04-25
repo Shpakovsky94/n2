@@ -3,7 +3,7 @@ import java.net.http.HttpRequest;
 import java.util.List;
 
 public class Main {
-    public static final String CORRECT_URL = "----";
+    public static final String CORRECT_URL = "https://emojihub.yurace.pro/api/random";
     public static final String FAIL_URL = "https://some-fail.com/api";
 
     public static void main(String[] args) {
